@@ -43,10 +43,6 @@ if 'entity_memory' not in st.session_state:
 if 'generated_plan' not in st.session_state:
     st.session_state.generated_plan = ""
 
-# Sidebar for initiating a new chat
-with st.sidebar:
-    st.button("New Chat", on_click=new_chat)
-
 # Main page title
 st.title('Speech Therapy Plan Generator')
 

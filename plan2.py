@@ -7,7 +7,7 @@ from googleapiclient.discovery import build  # YouTube API client
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 # Set environment variable for API key
-API_KEY1=st.secrets['API_KEY']
+API_KEY1=st.secrets['API_KEY1']
 
 # Initialize YouTube API client
 youtube = build('youtube', 'v3', developerKey=API_KEY1)

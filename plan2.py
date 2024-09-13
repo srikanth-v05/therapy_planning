@@ -13,7 +13,7 @@ API_KEY1=st.secrets['API_KEY1']
 youtube = build('youtube', 'v3', developerKey=API_KEY1)
 
 # Initialize LLM with Google Generative AI
-llm = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0, top_p=0.85)
+llm = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0, top_p=0.85,api_key=API_KEY1)
 
 # Function to search YouTube for videos
 def search_youtube(query):
